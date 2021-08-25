@@ -27,6 +27,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .abc{
     width: 80vw;
@@ -34,6 +35,7 @@ nav{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     display:none;
 }
@@ -82,13 +84,13 @@ a{
   .main_heading{
     color:white;
     font-size:90px;
-    margin-left:100px;
+    margin-left:90px;
     font-family: Avenir-Next,Roboto,sans-serif;  
   }
   .main_content {
     color:white;
     margin-top:-70px;
-    margin-left:100px;
+    margin-left:90px;
     font-size:33px;
     font-family: Avenir-Next,Roboto,sans-serif;
   }
@@ -100,7 +102,7 @@ a{
     border:none;
     height:50px;
     width:200px;
-    margin-left:100px;
+    margin-left:90px;
     margin-bottom:20px;
     font-family: Avenir-Next,Roboto,sans-serif;
   }
@@ -111,7 +113,7 @@ a{
     width:200px;
     background-color:#0000;
     color:#fff;
-     margin-left:100px;
+     margin-left:90px;
     margin-bottom:20px;
     border:2px solid white;
   }
@@ -121,7 +123,7 @@ a{
     border-radius:15px;
     outline:none;
     height:50px;
-    margin-left:95px;
+    margin-left:85px;
     margin-bottom:20px;
   }
   .btn-group{
@@ -611,7 +613,10 @@ background-color:rgba(0, 0, 0, 0.03);
     font-family: Avenir-Next,Roboto,sans-serif;
     text-align: center;
 }
-@media only screen and (max-width: 600px){  
+
+/*mobile view */
+
+@media only screen and (max-width: 600px){ 
     body{
         overflow-x: hidden;
     } 
@@ -620,7 +625,7 @@ background-color:rgba(0, 0, 0, 0.03);
         opacity: 0;
     }
     .h-class-resp{
-        height:230px;
+        height:250px;
     }
      #flag{
          visibility: hidden; 
@@ -633,16 +638,17 @@ background-color:rgba(0, 0, 0, 0.03);
     }
     .abc{
         display:block;
-        
+        border:1px solid black;
+        border-radius: 5px;
+        margin-left: -50px;
+        color:black;
         width:100%;
         margin-top:-40px;
+        margin-bottom: 30px;
         padding:20px;
     }
     .mobileNav{
         visibility: visible;
-         /* width:600px; */
-         /* margin-left: 220px; */
-         /* margin-top: 20px; */
          display: flex;
          flex-direction: column;
          justify-content: space-evenly;
@@ -650,10 +656,10 @@ background-color:rgba(0, 0, 0, 0.03);
     }
      .mobileView{
          visibility: visible;
-        width:300px;
+        width:280px;
          display: flex;
          justify-content: space-evenly;
-          margin-left: 100px;
+          /* margin-left: 20px; */
           margin-top: 20px; 
          margin-bottom:50px;
      }
@@ -663,31 +669,34 @@ background-color:rgba(0, 0, 0, 0.03);
      }
      #hamburgerIcon{
          font-size: 25px;
-         margin-left: 20px;;
+         margin-left: -60px;
      }
      #mobileApply{
             height:25px;
-            width:120px;
+            width:50px;
             background-color: rgb(226, 82, 46);
             color:white;
             border:none;    
-            margin-left: 20px;  
+            margin-left:-60px;  
      }
      .container{
-         height:120vh;
+         height:125vh;
+         width:115%;
          margin-top:-20px;
+         margin-left: -50px;
      }
      .main_heading{
          font-size: 60px;
          margin-right:20px;
-         margin-top:-3px;
+         margin-top:-3px;  
+         margin-left: 70px;      
      }
      .main_content{
        margin-top:-30px;
        margin-right: 20px;
      }
-     #stat2{
-         margin-left:10px;
+     .Statistics{
+         margin-left: 35px;
      }
      .qNa{
          margin-left:-85px;
@@ -697,7 +706,6 @@ background-color:rgba(0, 0, 0, 0.03);
          flex-direction: column;
      }
      #text{
-         margin-left:55px;
          text-align: center;
      }
      #content{
@@ -712,18 +720,27 @@ background-color:rgba(0, 0, 0, 0.03);
      #pokeSec3{
          margin-top: 15px;
      }
-     #pokeCompany{
-         margin-left: -50px;
-     }
-     #company{
-         margin-left:70px;
-     }
-     #resources{
-         margin-left: -50px;
-         margin-top: 20px;
-     }
-     #social{
-         margin-top: 10px;
-         margin-left: 80px;
-     }
+}
+
+/*tab view*/
+@media only screen and (max-width:800px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 25vh;
+    }
+    .container{
+        height:150vh;
+    }
+    .tableDesc{
+        display:flex;
+        flex-direction: column;
+    }
+    #text{
+        text-align: center;
+    }
+    #content{
+        margin-left:0;
+    }
 }
