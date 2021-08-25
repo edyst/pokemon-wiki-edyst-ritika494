@@ -696,6 +696,9 @@ background-color:rgba(0, 0, 0, 0.03);
      .Statistics{
          margin-left: 35px;
      }
+     #stat2{
+         margin-left: 0px;
+     }
      .qNa{
          margin-left:-85px;
      }
