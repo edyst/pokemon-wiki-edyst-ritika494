@@ -625,7 +625,7 @@ background-color:rgba(0, 0, 0, 0.03);
         opacity: 0;
     }
     .h-class-resp{
-        height:250px;
+        height:420px;
     }
      #flag{
          visibility: hidden; 
@@ -643,8 +643,8 @@ background-color:rgba(0, 0, 0, 0.03);
         margin-left: -50px;
         color:black;
         width:100%;
-        margin-top:-40px;
-        margin-bottom: 30px;
+        margin-top: 0 ;
+        margin-bottom: 10px;
         padding:20px;
     }
     .mobileNav{
@@ -659,9 +659,7 @@ background-color:rgba(0, 0, 0, 0.03);
         width:280px;
          display: flex;
          justify-content: space-evenly;
-          /* margin-left: 20px; */
-          margin-top: 20px; 
-         margin-bottom:50px;
+          margin-top: -80px;
      }
      #mobileFlag{
          height:25px;
@@ -680,10 +678,10 @@ background-color:rgba(0, 0, 0, 0.03);
             margin-left:-60px;  
      }
      .container{
-         height:125vh;
-         width:115%;
+         height:130vh;
+         width:125%;
          margin-top:-20px;
-         margin-left: -50px;
+         margin-left: -75px;
      }
      .main_heading{
          font-size: 60px;
